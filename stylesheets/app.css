@@ -13,16 +13,13 @@
    Shared Styles
 ----------------------------------------- */
 
-nav 					{background:#f6fbfb;/*border-top:3px solid rgb(11,13,15);*/width:100%;}
 
-.title 					{margin:0;padding:8px 0 0;}
+.title 					{ margin:0; padding:8px 0 0; }
 .title h4 				{
 						padding:18px 0 9px;
-						width:144px;
+						width:188px;
 						color:rgb(11,13,15);
-						border-bottom:3px solid rgb(11,13,15);
-						font-size:20px;
-						font-size:2.0rem;
+						/* border-bottom:3px solid rgb(11,13,15); -- Still on the fence. To border or not to border? */
 						margin-bottom: 3px;
 						font-family:"futura-pt","Helvetica Neue",Helvetica,sans-serif;
 						font-weight:300;
@@ -30,77 +27,119 @@ nav 					{background:#f6fbfb;/*border-top:3px solid rgb(11,13,15);*/width:100%;}
 						letter-spacing:1px;
 						font-variant:normal;
 						}
-
-.nav-bar li a:hover 	{}
-
-.thin 					{font-weight:100;}
-.light 					{font-weight:300;}
-.thick 					{font-weight:700;}
-.dark 					{color:#494949;}
-.darker 				{color:#434343;}
-.darkest 				{color:#313131;}
-
-h4.family  			{
-						background:url('../images/icon-grid-2up.png');
-						background-repeat:no-repeat;
-						background-position:left 5px;
-						margin-bottom:0;
-						padding-left:36px;
-						width:137px;
+a 						{
+				-webkit-transition: 0.2s all ease-in-out;
+				   -moz-transition: 0.2s all ease-in-out;
+					 -o-transition: 0.2s all ease-in-out;
+					-ms-transition: 0.2s all ease-in-out;
+						transition: 0.2s all ease-in-out;
 						}
-/*h4.about  			{
-						background:url('../images/sprite-head.png');
-						background-repeat:no-repeat;
-						background-position:center center;
-						padding-left:46px;
-						}*/
-h4.share  			{
-						background:url('../images/icon-chat.png');
-						background-repeat:no-repeat;
-						background-position:left 7px;
-						margin-bottom:9px;
-						padding-left:30px;
+nav a 					{
+						margin: 0 15px;
+						padding: 18px 0 9px;
+						border-bottom: 3px solid #f3f6f9; 
+						color: #939699;
+						font-size: 1.3rem;
+						font-weight: 600;
+						font-variant: small-caps;
+						letter-spacing: 1px;
+						text-decoration: none;
+						display: block;
 						}
-h4.email  			{
-						background:url('../images/sprite-head.png');
-						background-repeat:no-repeat;
-						background-position:right center;
-						padding-left:46px;
+nav a.active,
+nav a:target,
+nav a:active,
+nav a:hover 			{ color:#333537; border-bottom:3px solid #333537; text-decoration:none; }
+
+nav a.share-link 		{
+						margin-right:0 !important;
+						padding-top:24px;
+						background:#333537;
+						text-decoration:none;
+				-webkit-transition:0.3s all ease-in-out;
+				   -moz-transition:0.3s all ease-in-out;
+				     -o-transition:0.3s all ease-in-out;
+						transition:0.3s all ease-in-out;
 						}
+nav a.share-link:hover 	{ background:#f26522; border-bottom:none; }
+.nav-bar 				{ position:relative; float:right; }
 
-footer 					{padding:36px 0;background:rgb(11,13,15);}
+.thin 					{ font-weight:100; }
+.light 					{ font-weight:300; }
+.thick 					{ font-weight:700; }
+.dark 					{ color:#494949; }
+.darker 				{ color:#313131; font-weight:500; }
+.darkest 				{ color:#212121; font-weight:700; }
+.bigger 				{ font-size:1.4rem; }
 
+.icons ul 				{ margin-bottom:36px; }
+.icons ul li 			{ position:relative; height:54px; text-align:center !important; }
+
+/* Make the icons all the same width, then remove text-align above
+.icons ul li img 		{ position:absolute; bottom:0; }
+*/
 
 /* -----------------------------------------
-   Index
+   Content Block Styles
 ----------------------------------------- */
 
-.banner 				{margin-bottom:54px;padding:18px 0;border-bottom:1px solid rgba(11,13,15,0.15);position:relative;}
-.banner h3 				{padding-top:18px;color:rgba(11,13,15,0.95);}
-.flexslider 			{overflow:hidden;display:block;position:relative;width:100%;height:auto;}
-.flexslider > div img 	{margin-left:-770px;max-width:none;}
 
-#hero 					{overflow:hidden;}
+.island 				{ padding-top:36px; border-top:1px solid #b7b7b7; }
+.color-white	 		{ background:#f3f6f9; }
+.color-lightgrey 		{ background:#eaefef; }
+.color-blue 			{ background:#6cb4fc; }
 
-#glyph-preview 			{background:#f6fbfb;}
-	.icons ul 				{margin-bottom:36px;}
-	.icons ul li 			{text-align:center !important;}
+#hero > div > div		{ margin:36px 0 54px; }
 
-.island-head			{padding-top:18px;padding-bottom:18px;border-top:3px solid rgb(11,13,15);}
-.island-head small 	{line-height:30px;}
+.downloads 				{ padding-top:54px; }
 
-.island 				{padding-top:36px;}
-.island:last-child 		{padding-bottom:36px;}
-
-.color-white	 		{background:#f6fbfb;}
-.color-lightgrey 		{background:#eaefef;}
-.color-blue 			{background:#6cb4fc;}
-
-
-
+#about 					{ padding-bottom:18px; }
+.details h1 			{ padding-top:90px; }
+.details p 				{ max-width:372px; }
+#scale 					{
+						margin-top:18px;
+						background:url('../images/details-scale.png') 190px 6px no-repeat;
+						overflow:visible;
+						height:340px;
+						}
+#anywhere 				{
+						margin-top:36px;
+						background:url('../images/details-anywhere.jpg') 80px center no-repeat;
+						background-clip: border;
+						overflow:visible;
+						height:390px;
+						}
+#anywhere h1,
+#anywhere p 			{ padding-left:590px; }
+#free 					{
+						margin-top:9px;
+						background:url('../images/details-free.png') 590px 126px no-repeat;
+						overflow:visible;
+						height:340px;
+						}
+#share-wrapper 			{ height:72px; }
+.share-box 				{ height:auto; text-align:center; vertical-align:center; }
+footer 					{margin-bottom:54px; padding-top:36px; text-align:center; }
+footer a 				{
+						margin:0 auto;
+						color:#939699;
+						display:block;
+						width:250px;
+						float:none;
+				-webkit-transition:0.3s all ease-in-out;
+				   -moz-transition:0.3s all ease-in-out;
+				     -o-transition:0.3s all ease-in-out;
+						transition:0.3s all ease-in-out;
+						}
+footer a:hover 			{ color:#333537; }
+a.brand 				{
+						padding:72px 0 18px;
+						background:url('../images/shapes-light.png') 60px top no-repeat;
+						}
 
 /* -----------------------------------------
-   Page Name 2
+   Thank You
 ----------------------------------------- */
 
+#thanks h1 				{margin:0 auto;padding:108px 0;width:50%;}
 

@@ -1,130 +1,149 @@
 <!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product">
+<!--<![endif]-->
 <head>
 	<script type="text/javascript" src="http://use.typekit.com/qsk6ybg.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8" />
-
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
-
 	<title>Modern Minimal Glyphs</title>
-  
-	<!-- Included CSS Files -->
-	<!-- Combine and Compress These CSS Files -->
+
+  	<!-- Combine and Compress These CSS Files -->
 	<link rel="stylesheet" href="stylesheets/globals.css">
 	<link rel="stylesheet" href="stylesheets/typography.css">
 	<link rel="stylesheet" href="stylesheets/grid.css">
 	<link rel="stylesheet" href="stylesheets/ui.css">
-	<link rel="stylesheet" href="stylesheets/forms.css">
-	<link rel="stylesheet" href="stylesheets/reveal.css">
-	<link rel="stylesheet" href="stylesheets/mobile.css">
 	<!-- End Combine and Compress These CSS Files -->
+	<link rel="stylesheet" href="stylesheets/mobile.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
-
 	<link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css">
-	<script src="javascripts/jquery.min.js"></script>
+
+	<script src="javascripts/jquery-1.5.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
 	<script src="javascripts/jquery.flexslider.js"></script>
 	<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-    	slideshow: true,
-    	slideshowSpeed: 6000,
-    	animationDuration: 300,
-    	keyboardNav: true
+	  $(window).load(function() {
+	    $('.flexslider').flexslider({
+	    	slideshow: true,
+	    	slideshowSpeed: 5000,
+	    	animationDuration: 300,
+	    	keyboardNav: true
 
-    });
-  });
-</script>
+	    });
 
+	    $.localScroll({
+		queue:true,
+		easing: 'easeInOutExpo',
+		duration:800,
+		hash:true,
+		onBefore:function( e, anchor, $target ){
+			// The 'this' is the settings object, can be modified
+		},
+		onAfter:function( anchor, settings ){
+			// The 'this' contains the scrolled element (#content)
+		}
+	});
+	  });
+	</script>
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
 	<![endif]-->
-	
-	<script src="javascripts/modernizr.foundation.js"></script>
 
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+	<meta property="og:title" content="modern minimal glyphs" />
+	<meta property="og:type" content="product" />
+	<meta property="og:url" content="http://modern.squintongreen.com/" />
+	<meta property="og:image" content="" />
+	<meta property="og:site_name" content="modern minimal glyphs" />
+	<meta property="fb:admins" content="22613810" />
+	<!-- Update your html tag to include the itemscope and itemtype attributes. -->
+	<meta itemprop="name" content="modern minimal glyphs">
+	<meta itemprop="description" name="description" content="Got minimal? The modern minimal icons are a family of 30+ precision crafted vector glyphs, ready for your next web or mobile project. Royalty-free and ready to go.">
+	<meta name="keywords" content="icons, icon design, interface design, user interface design, ui design, glyphs, minimal, modern, outline, vector, Photoshop, Illustrator, EPS, SVG, PSD, CSH" />
+    <meta name="author" content="Samuel Quinton Green" />
 </head>
 <body>
-	<nav>
-		<div class="container">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277206362297068";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="container">
+		<nav>
 			<div class="row">
-				<div class="three columns title">
-					<h4>modern<span class="thick">minimal</span></h4>
+				<div class="title three phone-one columns">
+					<h4 itemprop="name"><span class="thick">modern</span>minimal</h4>
 				</div><!-- /eight columns -->
-				<div class="four columns pull-right">
-					<ul class="nav-bar hide-on-phones">
-						<li><a class="main" href="#">about</a></li>
-						<li><a class="main" href="#">gallery</a></li>
-						<li><a class="main" href="#">contact</a></li>
+				<div class="nine phone-three columns">
+					<ul class="nav-bar">
+						<li><a href="#about">about</a></li>
+						<li><a class="disabled" href="#">gallery</a></li>
+						<li><a href="http://modernminimal.tumblr.com">blog</a></li>
+						<li><a href="mailto:hi@squintongreen.com">contact</a></li>
 					</ul>
 				</div><!-- /four columns -->
 			</div><!-- /row -->
-		</div><!-- /container -->
-	</nav>
-	<section id="hero">
-		<div class="twelve columns phone-four">
-			<div class="flex-container">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<img src="images/solo-soundcloud.png" alt="big ole icons" title="sound cloud" />
-						</li>
-						<li>
-							<img src="images/solo-devices.png" alt="big ole icons" title="mobile devices" />
-						</li>
-						<li>
-							<img src="images/solo-clouddocs.png" alt="big ole icons" title="cloud documents" />
-						</li>
-						<li>
-							<img src="images/solo-cofeetalk.png" alt="big ole icons" title="coffee talk" />
-						</li>
-						<li>
-							<img src="images/solo-housemouse.png" alt="big ole icons" title="mouse house" />
-						</li>
-					</ul><!-- /slides -->
-				</div><!-- /flexslider -->
-			</div><!-- /flex-container -->
-		</div><!-- /twelve -->
-		<div class="container">
+		</nav>
+
+		<section id="hero">
 			<div class="row">
 				<div class="twelve columns phone-four">
+					<div class="flex-container">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="images/slide-devices.png" alt="big ole icons" title="mobile devices" />
+								</li>
+								<li>
+									<img src="images/slide-sound.jpg" alt="big ole icons" title="sound cloud" />
+								</li>
+								<li>
+									<img src="images/slide-coffee.jpg" alt="big ole icons" title="coffee talk" />
+								</li>
+								<li>
+									<img src="images/slide-sizes-num.png" alt="big ole icons" title="coffee talk" />
+								</li>
+								<li>
+									<img src="images/slide-search.png" alt="big ole icons" title="coffee talk" />
+								</li>
+							</ul><!-- /slides -->
+						</div><!-- /flexslider -->
+					</div><!-- /flex-container -->
+				</div><!-- /twelve -->
+			</div>
+		</section>
+
+		<section id="first">
+			<div class="row island">
+				<div class="twelve columns phone-four">
 					<div class="banner">
-						<h3>A family of thirty precision-crafted vector glyphs. Elegant. Simple. Modern.</h3>
+						<h3 itemprop="description">A family of thirty precision-crafted vector glyphs. Elegant. <span class="darker">Simple.</span> <span class="darkest">Modern.</span></h3>
 					</div>
 				</div><!-- /twelve columns -->
 			</div>
-		</div>
-	</section>
-	<section id="downloads">
-		<div class="container">
 			<div class="row">
-				<ul class="block-grid two-up">
-					<li><a class="button charcoal fade download" href="#">Photoshop&nbsp;&nbsp;<small>psd + csh</small></a></li>
-					<li><a class="button disabled white fade download" href="#">Vector&nbsp;&nbsp;<small>eps</small>&nbsp;&nbsp;<span class="label blue">soon</span></a></li>
+				<ul class="downloads block-grid two-up">
+					<li><a class="button photoshop fade radius download" href="dl/modern-minimal-ps.zip" onClick="_gaq.push(['_trackEvent', 'Photoshop', 'Download', 'PSD/CSH']);">Photoshop&nbsp;&nbsp;<small>psd + csh</small></a></li>
+					<li><a class="button vector white fade radius download" href="dl/modern-minimal-vector.zip" onClick="_gaq.push(['_trackEvent', 'Vector', 'Download', 'SVG']);">Vector&nbsp;&nbsp;<small>svg</small></a></li>
 				</ul>
 			</div><!-- /row -->
-		</div><!-- /container -->
-	</section>
-	<section id="glyph-preview" class="color-white">
-		<div class="container island-wrap">
-			<div class="row island-head">
-				<div class="eight columns phone-three">
-					<h4 class="family">meet the family</h4>
-				</div>
-				<div class="four columns phone-one">
-					<small class="hint keyboard"><strong>g</strong> for grid overlay</small>
-				</div>
-			</div><!-- /island-head -->
+		</section>
+
+		<section id="glyphs">
 			<div class="row island icons">
 				<!-- row 1 -->
 				<ul class="block-grid five-up">
@@ -235,69 +254,133 @@
 					</li>
 				</ul><!-- /block-grid -->
 			</div><!-- /island -->
-		</div><!-- /container -->
-	</section><!-- /glyph-preview -->
+		</section><!-- /glyph-preview -->
 
-	<section id="call" class="color-lightgrey">
-		<div class="container island-wrap">
+		<section id="about">
 			<div class="row island">
 				<div class="six columns phone-two">			
-					<h4>about these icons</h4>
-					<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+					<h4><span class="thick">about</span> the glyphs</h4>
+					<p>Born out of neccessity, the modern minimal glyphs were created as a humble set of five icons designed for use in wireframes and prototypes. Though the family is small, it is growing!
+					</p>
+					<p>I’d be happy to see how you use them, so <a href="mailto:sam@squintongreen.com">email me</a> your best examples. I'll feature them in a gallery on this site.</p>
 				</div>
 				<div class="six columns phone-two">
-					<h4 class="share">tell your friends</h4>
-					<p>Once you've exhausted the fun in this document, you should check out:</p>
+					<h4><span class="thick">free</span> (as in free beer)</h4>
+					<p>The modern minimal glyphs are free, even for commercial use. However, if you still wish to make a donation towards the continued development of the icons, feel free to do so. Thank you!</p>
+					<!--  PayPayl Crap  -->
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="MS4YWGRNF87RL">
+						<input type="image" src="http://modern.squintongreen.com/images/btn-donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
 				</div><!-- /six columns -->
 			</div><!-- /island row -->
-		</div><!-- /container -->
-	</section><!-- /call-1 -->
-	<section id="newsletter" class="color-blue">
-		<div class="container island-wrap">
+		</section><!-- /about -->
+
+		<section id="scale" class="details">
 			<div class="row island">
-				<div class="twelve columns">			
-					<h4>newsletter</h4>
-					<div class="row">
-						<div class="six columns phone-four">
-							<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-						</div>
-						<div class="six columns phone-four">
-							<form class="nice">
-								<input type="text" class="input-text" id="standardNiceInput" placeholder="email address">
-								<submit class="button white fade" type="submit" value="go!" />go!</submit>
-							</form>
-						</div>
-					</div><!-- /row -->
-				</div><!-- /twelve -->
-			</div><!-- /island row -->
-		</div><!-- /container -->
-	</section><!-- /newsletter -->
-	<footer>
-		<div class="container">
+				<div class="twelve columns">
+					<h1>infinitely scalable</h1>
+					<p>Composed of vector shapes, the glyphs are
+					scalable to any size - which means
+					you can have them as big or as small as you want.
+					No blurry edges, no fuzzy pixels.
+					</p>
+				</div><!-- /scale -->
+			</div>
+		</section>
+		<section id="anywhere" class="details">
 			<div class="row">
-				<div class="eight columns phone-four">
-					<p>2012, S. Quinton Green</p>
-				</div>
-				<div class="four columns phone-four pull-right">
-					<ul class="nav-bar hide-on-phones">
-						<li><a class="main" href="#">about</a></li>
-						<li><a class="main" href="#">gallery</a></li>
-						<li><a class="main" href="#">contact</a></li>
-					</ul><!-- /nav-bar -->
-				</div>
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</footer>
+				<div class="twelve columns">
+					<h1>at home anywhere</h1>
+					<p>The open forms and minimal styling make the
+					modern minimal glyphs well suited for a variety
+					of tasks. On the web, mobile applications, and
+					even in print, the modern minimal family will always 
+					look sharp.
+					</p>
+				</div><!-- /anywhere -->
+			</div>
+		</section>
+		<section id="free" class="details">
+			<div class="row">
+				<div class="twelve columns">
+					<h1>100% royalty free</h1>
+					<p>The modern minimal set is free for you to use,
+					re-use, and share with others. Licensed under the
+					<a href="http://creativecommons.org/licenses/" target="_blank">Creative Commons</a>, you are free
+					use this family of glyphs however you see fit -
+					except, of course, selling them as your own work.
+					Just be sure to tell people where you got 'em. Easy.
+					</p>
+				</div><!-- /free -->
+			</div>
+		</section>
 
+		<footer>
+			<div id="share-wrapper" class="row island">
+				<div class="share-box twitter four columns">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modern.squintongreen.com" data-text="Got minimal? 30+ precision crafted vector glyphs - the Modern Minimal icon family." data-via="posneg" data-hashtags="minimal">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div><!-- /twitter -->
+				<div class="share-box facebook four columns">
+					<div class="fb-like" data-href="http://modern.squintongreen.com" data-send="true" data-layout="button_count" data-width="105" data-show-faces="false" data-font="arial"></div>
+				</div><!-- /facebook -->
+				<div class="share-box gplus four columns">
+					<div class="g-plusone" data-size="medium" data-href="http://modern.squintongreen.com"></div>
+					<script type="text/javascript">
+					  (function() {
+					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					    po.src = 'https://apis.google.com/js/plusone.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					  })();
+					</script>
+				</div><!-- /gplus -->
+			</div><!-- /share-wrapper -->
+			<div class="row">
+				<div class="twelve columns phone-four">
+					<a href="http://www.squintongreen.com" class="brand">Designed by Samuel Quinton Green.</a>
+					<a href="http://en.wikipedia.org/wiki/Atlanta">Made with love in Atlanta.</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
 
-	<!-- Included JS Files -->
-	
-	<!-- Combine and Compress These JS Files -->
-	<script src="javascripts/jquery.reveal.js"></script>
-	<script src="javascripts/jquery.customforms.js"></script>
-	<script src="javascripts/jquery.placeholder.min.js"></script>
-	<!-- End Combine and Compress These JS Files -->
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28732237-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<script src="javascripts/jquery.localscroll-min.js"></script>
+	<script src="javascripts/jquery.scrollTo-min.js"></script>
+	<script src="javascripts/jquery.easing.1.3.js"></script>
 	<script src="javascripts/app.js"></script>
+	<script type="text/javascript">
+  var GoSquared = {};
+  GoSquared.acct = "GSN-333960-S";
+  (function(w){
+    function gs(){
+      w._gstc_lt = +new Date;
+      var d = document, g = d.createElement("script");
+      g.type = "text/javascript";
+      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+      var s = d.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(g, s);
+    }
+    w.addEventListener ?
+      w.addEventListener("load", gs, false) :
+      w.attachEvent("onload", gs);
+  })(window);
+</script>
 
 </body>
 </html>
